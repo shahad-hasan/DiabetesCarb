@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.diabetescarbapp">
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DiabetesCarbApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".activities.options.CorrectionDoseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.options.BolusInsulinDoseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.options.BasalInsulinDoseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.options.FollowUpLogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.options.AboutUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.options.OptionsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.main.FoodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.main.FoodsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.main.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.main.MainActivity"
+            android:exported="true" />
+
+
+        <activity
+            android:name=".activities.auth.PerInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.auth.AuthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.auth.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.auth.SignInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.start.StartActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".utils.AlarmManagerBuilder$AlarmReceiver" />
+    </application>
+
+</manifest>

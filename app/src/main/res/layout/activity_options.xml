@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.options.OptionsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5">
+
+        <ImageView
+            android:layout_width="126dp"
+            android:layout_height="210dp"
+            android:layout_marginTop="-5dp"
+            android:layout_marginStart="-20dp"
+            android:rotation="5"
+            android:src="@drawable/back1"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:translationZ="-1dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="-40dp"
+            android:layout_marginBottom="-20dp"
+            android:layout_marginStart="-120dp"
+            android:src="@drawable/ic_circle"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="-80dp"
+            android:layout_marginBottom="-60dp"
+            android:layout_marginStart="-88dp"
+            android:gravity="center">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="الملف الشخصي\nو الإعدادات"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_aboutUser"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginVertical="2dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:drawablePadding="15dp"
+                android:background="@drawable/round_corner_options_item"
+                android:text="معلومات عني"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="start|center_vertical"
+                android:drawableStart="@drawable/ic_account"
+                android:drawableEnd="@drawable/ic_arrow" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_followUpLog"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginVertical="2dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:drawablePadding="15dp"
+                android:background="@drawable/round_corner_options_item"
+                android:text="سجل المتابعة"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="start|center_vertical"
+                android:drawableStart="@drawable/ic_account"
+                android:drawableEnd="@drawable/ic_arrow" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_correctionDose"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginVertical="2dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:drawablePadding="15dp"
+                android:background="@drawable/round_corner_options_item"
+                android:text="الجرعة التصحيحية"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="start|center_vertical"
+                android:drawableStart="@drawable/ic_account"
+                android:drawableEnd="@drawable/ic_arrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_signOut"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginVertical="2dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:drawablePadding="15dp"
+                android:background="@drawable/round_corner_options_item"
+                android:text="تسجيل الخروج"
+                android:textAllCaps="false"
+                android:textColor="#FC4646"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="start|center_vertical"
+                android:drawableStart="@drawable/ic_logout"
+                android:drawableEnd="@drawable/ic_arrow"
+                android:drawableTint="#FC4646" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

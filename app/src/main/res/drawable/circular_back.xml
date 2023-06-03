@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<shape android:shape="oval"-->
+<!--    android:tint="@color/color"-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+<!--    <size android:width="360dp"-->
+<!--        android:height="360dp" />-->
+
+<!--</shape>-->
+
+<!--<shape android:shape="oval"-->
+<!--    android:tint="@color/color"-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android">-->
+<!--    <solid android:color="@color/color"/>-->
+<!--    <scale android:scaleType="fitXY"/>-->
+<!--</shape>-->
+
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#AFCFE4">
+
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/color"/>
+            <scale android:scaleType="fitXY"/>
+            <padding
+                android:top="8dp"
+                android:bottom="8dp"
+                android:left="8dp"
+                android:right="8dp"/>
+        </shape>
+    </item>
+
+</ripple>
